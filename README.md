@@ -28,6 +28,7 @@ Please submit a simple go program which will perform/has the following:
 * This is the type that we shall send into one of the channels
 
 2. Write 2 functions one named and one anonymous
+* You can choose any name you want for the first function
 * The named function will accept 2 channels, A and B
 * Channel A is responsible for holding GGevents
 * Channel B is responsible for holding integers
@@ -47,6 +48,8 @@ See the following: https://github.com/GoGetCorp/gglib
 
 All functions (the named and the anonymous one, calling the function which produces errors) must be called concurrently.
 
+Expected number of files:
+* 1 main.go file containing main + the task functions
 
 # Task Output
 
