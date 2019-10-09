@@ -18,6 +18,12 @@ concurrency as this is what we will be doing in our daily work.
 
 This task is doable in a 1-2 hours if you manage to google up the basics and understand a bit of what is going on.
 
+# Deadline and submission
+
+Please create a public git repo and link us to it. Send an email to kiril@gogetcorp.com
+
+You have a maximum of 3 days to submit this task.
+
 If anything is unclear please do not hesitate to contact me: kiril@gogetcorp.com
 
 # Task
@@ -81,16 +87,10 @@ exit status 1
 * A) If you are satisifed with the above task, a bonus is to include a make file capable of compiling and producing a binary for linux and a small README.md 
 * B) If you have completed both the task and bonus A. Update your make file with the capability of producing a docker image that will run your binary on alpine linux.
 
-# Deadline and submission
-
-Please create a public git repo and link us to it. 
-
-You have a maximum of 3 days to submit this task.
-
 
 # Useful resources
-Golang (tour of go)
-General Googling :)
-https://github.com/GoGetCorp/gglib
+* Golang (tour of go)
+* General Googling :)
+* https://github.com/GoGetCorp/gglib (Highly recommended)
 
 Good luck!
