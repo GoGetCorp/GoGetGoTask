@@ -37,11 +37,11 @@ Please submit a simple go program which will perform/has the following:
 The anonymous function should take in 2 channels
 * The first channel should process only integers, the second channel should process only errors
 * For every error that we process, we should keep track of the number of times an error has occured as well as log it to the screen (stdout). If an error has occured more than 3 times. Exit the program with an error code of 1. 
-* For every integer that has been recieved on the integer channel, simply print it out us
+* For every integer that has been recieved on the integer channel, simply print it out us (you can use a logging package)
 
-3. Error messages will be generated from a library package function that GoGet has open sourced. You must use this in your code to produce the errors. 
+3. Error messages will be generated from a library package function that GoGet has open sourced. 
+*You must use this in your code to produce the errors.*
 See the following: https://github.com/GoGetCorp/gglib
-
 * This package will need to be imported into your program
 * You will need to call this function concurrently
 
@@ -69,8 +69,8 @@ exit status 1
 2. Your program might have a deadlock (Readup on Channels!)
 
 # Bonus
-A) If you are satisifed with the above task, a bonus is to include a make file capable of compiling and producing a binary for linux and a small README.md 
-B) If you have completed both the task and bonus A. Update your make file with the capability of producing a docker image that will run your binary on alpine linux.
+* A) If you are satisifed with the above task, a bonus is to include a make file capable of compiling and producing a binary for linux and a small README.md 
+* B) If you have completed both the task and bonus A. Update your make file with the capability of producing a docker image that will run your binary on alpine linux.
 
 # Deadline and submission
 
