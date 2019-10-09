@@ -47,6 +47,9 @@ See the following: https://github.com/GoGetCorp/gglib
 
 All functions must be called concurrently.
 
+The following is a sample output of how the task should work.
+A successful task will exit with status code 1 due to the number of errors being generated from the library function we have provided. 
+
 ```Sample output
 INFO[0002] Output from Process Events: 2                
 INFO[0004] Output from Process Events: 4                
