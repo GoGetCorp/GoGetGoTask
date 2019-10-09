@@ -54,6 +54,8 @@ See the following: https://github.com/GoGetCorp/gglib
 
 All functions (the named and the anonymous one, calling the function which produces errors) must be called concurrently.
 
+A single GGEvent structure, with a counter initalized to 0 should be sent into the channel ressponsible for receiving GGevents. To begin the chain of processing data :)
+
 Expected number of files:
 * 1 main.go file containing main + the task functions
 
@@ -80,7 +82,7 @@ exit status 1
 ```
 
 # Potential issues
-1. Your program might exit prematurely :)
+1. Your program might exit prematurely :) (you will have to do somerhing about this)
 2. Your program might have a deadlock (Readup on Channels!)
 
 # Bonus
