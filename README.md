@@ -64,7 +64,9 @@ Expected number of files:
 # Task Output
 
 The following is a sample output of how the task should work.
-A successful task will exit with status code 1 due to the number of errors being generated from the library function we have provided. 
+A successful task will exit with status code 1 due to the number of errors being generated from the library function we have provided.  
+
+**Note that channels are EXTREMELY fast. The sample output includes a sleep `time.Sleep(1*time.second)` just after incrementing the counter in the named function). You can choose to add that or not. If you don't your output will probably be a number >4,000,000 **
 
 ```Sample output
 INFO[0002] Output from Process Events: 2                
