@@ -18,7 +18,7 @@ concurrency as this is what we will be doing in our daily work.
 
 This task is doable in a 1-2 hours if you manage to google up the basics and understand a bit of what is going on.
 
-I suggest you READ the entirety before starting the task ;)
+I suggest you READ the entirety of this document before starting the task ;)
 
 # Deadline and submission
 
