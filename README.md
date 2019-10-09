@@ -45,7 +45,10 @@ See the following: https://github.com/GoGetCorp/gglib
 * This package will need to be imported into your program
 * You will need to call this function concurrently
 
-All functions must be called concurrently.
+All functions (the named and the anonymous one, calling the function which produces errors) must be called concurrently.
+
+
+# Task Output
 
 The following is a sample output of how the task should work.
 A successful task will exit with status code 1 due to the number of errors being generated from the library function we have provided. 
