@@ -18,6 +18,8 @@ concurrency as this is what we will be doing in our daily work.
 
 This task is doable in a 1-2 hours if you manage to google up the basics and understand a bit of what is going on.
 
+I suggest you READ the entirety before starting the task ;)
+
 # Deadline and submission
 
 Please create a public git repo and link us to it. Send an email to kiril@gogetcorp.com
@@ -93,6 +95,6 @@ exit status 1
 # Useful resources
 * Golang (tour of go)
 * General Googling :)
-* https://github.com/GoGetCorp/gglib (Highly recommended)
+* https://github.com/GoGetCorp/gglib
 
 Good luck!
