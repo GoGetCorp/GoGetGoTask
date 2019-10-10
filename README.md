@@ -106,5 +106,6 @@ exit status 1
 # Hints
 * You will probably need to use at least one Buffered channel.
 * The source code of the gglib function is your friend :)
+* Don't forget to send the incremented GGevent back into the GGevent channel after you have updated the structure 
 
 Good luck!
