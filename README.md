@@ -18,14 +18,15 @@ You will need the following installed: Go v1.13+, git
 Disclaimer!: Don't stress so much over the completeness of this task. Its okay if something doesn't work so well, or arrives slightly out of order. This task is mostly to get you (the candidate) used to Go syntax and dealing with 
 concurrency as this is what we will be doing in our daily work. 
 
-This task is doable in a 1-2 hours if you manage to google up the basics and understand a bit of what is going on.
+This task is designed to be doable in a 1-2 hours if you manage to google up the basics and understand a bit of what is going on. However due to the nature of tests being stressful its completely OK if this takes you longer to complete. Sometimes getting into a brand new language is hard. Therefore You have a maximum of 3 days to attempt to complete this task.
 
 I suggest you READ the entirety of this document before starting the task ;)
 
 # Deadline and submission
 
 Please create a public git repo and link us to it. Send an email to kiril@gogetcorp.com
-We expect that the program compiles and runs :)
+
+Typically we expect that the program compiles and runs :) However if for some reason you can not complete the task, submit your attempt anyway. What is important to us is that you have at least attempted this task. 
 
 You have a maximum of 3 days to submit this task.
 
