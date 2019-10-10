@@ -4,13 +4,13 @@ The task is to create a very simple golang program which will demonstrate the us
 During your day to day work with GoGet you will be dealing with functions that pass and interact with data in a multithreaded setting.
 
 To perform your task you will need to look up the following concepts:
-* Structures in Go (declaration, setting, accessing)
+* Structures in Go (Declaration, setting, accessing)
 * Channels in go (Buffered and Unbuffered, sending and recieveing)
 * For loops and Select statements
 * Import packages and using functions from third parties
 * Named functions and anonymous functions 
 * Concurrency in Go. (GoRoutines)
-* Pointers in Go. (potentially)
+* Pointers in Go. (Potentially)
 * How to build and run your Go program. 
 
 You will need the following installed: Go v1.13+, git
