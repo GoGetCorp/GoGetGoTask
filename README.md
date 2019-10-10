@@ -61,7 +61,7 @@ See the following: https://github.com/GoGetCorp/gglib
 
 All functions (the named and the anonymous one, and calling the function which produces errors) must be called concurrently.
 
-A single GGEvent structure, with a counter initalized to 0 should be sent into the channel responsible for receiving GGevents. This will begin the chain of processing data :)
+A single GGEvent structure, with a counter initalized to 0 should be sent into the channel responsible for receiving GGevents. This will begin the chain of processing data for the named and the anonymous functions. :)
 
 Expected number of files:
 * 1 main.go file containing main + the task functions
@@ -71,7 +71,7 @@ Expected number of files:
 The following is a sample output of how the task should work.
 A successful task will exit with status code 1 due to the number of errors being generated from the library function we have provided.  
 
-**Note that channels are EXTREMELY fast. The sample output includes a sleep `time.Sleep(1*time.second)` just after incrementing the counter in the named function). You can choose to add that or not. If you don't your output will probably be a number >4,000,000 **
+**Note that channels are EXTREMELY fast. The sample output includes a sleep `time.Sleep(1*time.second)` just after incrementing the counter in the named function). You can choose to add that or not. If you don't your output will probably be a number >4,000,000**
 
 ```Sample output
 INFO[0002] Output from Process Events: 2                
@@ -99,7 +99,7 @@ exit status 1
 
 
 # Useful resources
-* Golang (tour of go) 
+* Golang (tour of go) https://tour.golang.org/list  - Specifically the Flow Control, Structs and Concurrency
 * General Googling :)
 * https://github.com/GoGetCorp/gglib
 
