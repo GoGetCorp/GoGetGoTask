@@ -6,7 +6,7 @@ During your day to day work with GoGet you will be dealing with functions that p
 To perform your task you will need to look up the following concepts:
 * Structures in Go (Declaration, setting, accessing)
 * Channels in go (Buffered and Unbuffered, sending and recieveing)
-* For loops and Select statements
+* For loops, range and Select statements
 * Import packages and using functions from third parties
 * Named functions and anonymous functions 
 * Concurrency in Go. (GoRoutines)
