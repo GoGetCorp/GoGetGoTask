@@ -8,9 +8,10 @@ To perform your task you will need to look up the following concepts:
 * Channels in go (Buffered and Unbuffered, sending and recieveing)
 * For loops and Select statements
 * Import packages and using functions from third parties
-* Named functions and anonymous functions (Closures)
+* Named functions and anonymous functions 
 * Concurrency in Go. (GoRoutines)
 * Pointers in Go. (potentially)
+* How to build and run your Go program. 
 
 You will need the following installed: Go v1.13+, git
 
@@ -24,6 +25,7 @@ I suggest you READ the entirety of this document before starting the task ;)
 # Deadline and submission
 
 Please create a public git repo and link us to it. Send an email to kiril@gogetcorp.com
+We expect that the program compiles and runs :)
 
 You have a maximum of 3 days to submit this task.
 
@@ -38,6 +40,7 @@ Please submit a simple go program which will perform/has the following:
 * The member inside the GGevent structure will be a counter, increasing with each iteration when processing GGevents
 
 2. Write 2 functions one named and one anonymous
+* There is no need for a return value as these two functions will only work on channels.
 * You can choose any name you want for the first function
 * The named function will accept 2 channels, A and B
 * Channel A is responsible for holding GGevents
@@ -47,7 +50,7 @@ Please submit a simple go program which will perform/has the following:
 
 The anonymous function should take in 2 channels as parameters
 * The first channel should process only integers, the second channel should process only errors
-* For every error that we process, we should keep track of the number of times an error has occured as well as log it to the screen (stdout). If an error has occured more than 3 times. Exit the program with an error code of 1. 
+* For every error that we process (i.e recieve a value on the error channel), we should keep track of the number of times an error has occured as well as log it to the screen (stdout). If an error has occured more than 3 times. Exit the program with an error code of 1. 
 * For every integer that has been recieved on the integer channel, simply log it to the screen (stdout)(you can use a logging package)
 
 3. Error messages will be generated from a library package function that GoGet has open sourced. 
@@ -96,7 +99,7 @@ exit status 1
 
 
 # Useful resources
-* Golang (tour of go)
+* Golang (tour of go) 
 * General Googling :)
 * https://github.com/GoGetCorp/gglib
 
