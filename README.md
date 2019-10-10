@@ -5,11 +5,12 @@ During your day to day work with GoGet you will be dealing with functions that p
 
 To perform your task you will need to look up the following concepts:
 * Structures in Go (declaration, setting, accessing)
-* Channels in go (Buffered and Unbuffered)
+* Channels in go (Buffered and Unbuffered, sending and recieveing)
+* For loops and Select statements
 * Import packages and using functions from third parties
-* Named functions and anonymous functions
+* Named functions and anonymous functions (Closures)
 * Concurrency in Go. (GoRoutines)
-* Pointers in Go. 
+* Pointers in Go. (potentially)
 
 You will need the following installed: Go v1.13+, git
 
@@ -34,6 +35,7 @@ Please submit a simple go program which will perform/has the following:
 
 1. A GGevent structure should be declared holding a single member of type integer
 * This is the type that we shall send into one of the channels
+* The member inside the GGevent structure will be a counter, increasing with each iteration when processing GGevents
 
 2. Write 2 functions one named and one anonymous
 * You can choose any name you want for the first function
@@ -41,12 +43,12 @@ Please submit a simple go program which will perform/has the following:
 * Channel A is responsible for holding GGevents
 * Channel B is responsible for holding integers
 * For every GGevent which comes into channel A increment the counter inside the structure
-* when incrementing the counter and it is an even number, that number should be sent to Channel B
+* When incrementing the counter and it is an even number, that number should be sent to Channel B
 
-The anonymous function should take in 2 channels
+The anonymous function should take in 2 channels as parameters
 * The first channel should process only integers, the second channel should process only errors
 * For every error that we process, we should keep track of the number of times an error has occured as well as log it to the screen (stdout). If an error has occured more than 3 times. Exit the program with an error code of 1. 
-* For every integer that has been recieved on the integer channel, simply print it out us (you can use a logging package)
+* For every integer that has been recieved on the integer channel, simply log it to the screen (stdout)(you can use a logging package)
 
 3. Error messages will be generated from a library package function that GoGet has open sourced. 
 *You must use this in your code to produce the errors.*
@@ -54,9 +56,9 @@ See the following: https://github.com/GoGetCorp/gglib
 * This package will need to be imported into your program
 * You will need to call this function concurrently
 
-All functions (the named and the anonymous one, calling the function which produces errors) must be called concurrently.
+All functions (the named and the anonymous one, and calling the function which produces errors) must be called concurrently.
 
-A single GGEvent structure, with a counter initalized to 0 should be sent into the channel ressponsible for receiving GGevents. To begin the chain of processing data :)
+A single GGEvent structure, with a counter initalized to 0 should be sent into the channel responsible for receiving GGevents. This will begin the chain of processing data :)
 
 Expected number of files:
 * 1 main.go file containing main + the task functions
@@ -84,9 +86,8 @@ INFO[0018] Output from Process Events: 18
 ERRO[0020] Annoying Error message, something went wrong 
 exit status 1
 ```
-
 # Potential issues
-1. Your program might exit prematurely :) (you will have to do somerhing about this)
+1. Your program might exit prematurely :) (you will have to do something about this)
 2. Your program might have a deadlock (Readup on Channels!)
 
 # Bonus
@@ -98,5 +99,9 @@ exit status 1
 * Golang (tour of go)
 * General Googling :)
 * https://github.com/GoGetCorp/gglib
+
+# Hints
+* You will probably need to use at least one Buffered channel.
+* The source code of the gglib function is your friend :)
 
 Good luck!
