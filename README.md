@@ -30,8 +30,6 @@ Typically we expect that the program compiles and runs :) However if for some re
 
 You have a maximum of 3 days to submit this task.
 
-If anything is unclear please do not hesitate to contact me: kiril@gogetcorp.com
-
 # Task
 
 Please submit a simple go program which will perform/has the following:
@@ -109,5 +107,7 @@ exit status 1
 * The source code of the gglib function is your friend :)
 * Don't forget to send the incremented GGevent back into the GGevent channel after you have updated the structure
 * "golang ping pong channels"
+
+If anything is unclear please do not hesitate to contact me: see email above :)
 
 Good luck!
